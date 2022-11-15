@@ -1,8 +1,8 @@
 import './App.css';
+import '@testing-library/jest-dom'
 
 function App() {
-  const { version } = window['appConfig'] || 'demo';
-
+  const version = window['appConfig']?.version || 'Demo'
 
   return (
     <div className="App">
