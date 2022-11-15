@@ -1,8 +1,10 @@
 import './App.css';
 
 function App() {
-  const { version } = window['appConfig'] || 'demo';
-
+  let version = 'Demo'
+  if (window['appConfig']) {
+    version = window['appConfig'].version;
+  }
 
   return (
     <div className="App">
